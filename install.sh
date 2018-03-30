@@ -3,6 +3,7 @@ sudo apt-get update;
 sudo apt-get install git -y;
 sudo apt-get install vim -y;
 sudo apt-get install curl -y;
+sudo apt-get install htop -y;
 
 sudo apt-get install mysql-client mysql-server -y;
 sudo apt-get install redis -y;
