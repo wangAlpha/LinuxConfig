@@ -20,6 +20,8 @@ sudo apt-get install thunderbird -y;
 sudo apt-get install jq -y;
 sudo pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
 sudo snap install pycharm-community --classic;
+sudo snap install snapd -y;
+sudo snap install electronic-wechat；
 
 sudo apt-get install zsh;
 sudo apt-get install tlp tlp-rdw -y;
