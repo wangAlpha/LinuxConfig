@@ -26,10 +26,13 @@ sudo snap install snapd -y;
 sudo snap install electronic-wechat；
 
 sudo apt-get install zsh -y;
+sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo chsh -s `which zsh`;
+
 sudo apt-get install tlp tlp-rdw -y;
 sudo tlp start;
 sudo apt-get install gnome-tweak-tool -y;
-sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 sudo apt-get update;
 sudo apt-get upgrade -y;
 sudo apt-get dist-upgrade -y;
@@ -37,9 +40,17 @@ sudo apt-get dist-upgrade -y;
 sudo curl https://sh.rustup.rs -sSf | sh;
 cargo install racer;
 rustup component add rust-src;
-cargo +nighty install clippy --force;
+rustup install nightly;
+
+rustup update nightly
+cargo +nightly install --force clippy;
 rustup component add rustfmt-preview;
 
+sudo add-apt-repository ppa:noobslab/macbuntu;
+sudo apt-get install macbuntu-os-icons-lts-v7 -y;
+sudo apt-get install macbuntu-os-ithemes-lts-v7 -y;
+
+sudo apt-get install albert -y;
 sudo apt-get install --no-install-recommends gdm3 -y;
 sudo apt-get install chromium-browser -y;
 sudo apt-get remove ligthdm -y;                                           
