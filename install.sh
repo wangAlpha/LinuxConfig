@@ -15,6 +15,7 @@ sudo apt-get install python3 -y;
 sudo apt-get install pylint -y;
 sudo apt-get install mpg123 -y;
 sudoa apt-get install python3-pip -y;
+sudo pip3 install ptpython;
 sudo pip3 install Netease-Musicbox - y;
 
 sudo apt-get install shadowsocks -y;
