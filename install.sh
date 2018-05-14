@@ -8,13 +8,17 @@ sudo apt-get install mysql-client mysql-server -y;
 sudo apt-get install redis -y;
 sudo apt-get install build-essential -y;
 sudo apt-get install llvm -y;
-sudo apt-get install clang-6.0 -y;
+sudo apt-get install clang-5.0 -y;
+sudo apt-get install clang-format-5.0 -y;
+
 sudo apt-get install golang -y;
 sudo apt-get install gocode -y;
+
 sudo apt-get install python3 -y;
 sudo apt-get install pylint -y;
 sudo apt-get install mpg123 -y;
-sudoa apt-get install python3-pip -y;
+sudo apt-get install python3-pip -y;
+sudo pip3 install --upgrade pip; 
 sudo pip3 install ptpython;
 sudo pip3 install Netease-Musicbox - y;
 
@@ -42,7 +46,6 @@ sudo curl https://sh.rustup.rs -sSf | sh;
 cargo install racer;
 rustup component add rust-src;
 rustup install nightly;
-
 rustup update nightly
 cargo +nightly install --force clippy;
 rustup component add rustfmt-preview;
