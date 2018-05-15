@@ -1,5 +1,7 @@
 sudo apt-get update;
 sudo apt-get install git -y;
+git config --global user.name "wangAlpha";
+git config --global user.email "wzalpha@outlook.com";
 sudo apt-get install vim -y;
 sudo apt-get install emacs -y;
 sudo apt-get install curl -y;
