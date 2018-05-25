@@ -55,6 +55,12 @@ sudo apt-get install macbuntu-os-icons-lts-v7 -y;
 sudo apt-get install macbuntu-os-ithemes-lts-v7 -y;
 sudo apt-get install albert -y;
 
+# install typora
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+sudo apt-get install typora -y;
+
 sudo apt-get install --no-install-recommends gdm3 -y;
 sudo apt-get install chromium-browser -y;
 sudo apt-get remove ligthdm -y;                                           
