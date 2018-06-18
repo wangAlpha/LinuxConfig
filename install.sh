@@ -7,6 +7,11 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d;
 sudo apt-get install curl -y;
 sudo apt-get install htop -y;
 
+cd /tmp
+git clone https://github.com/chxuan/vimplus.git ~/.vimplus
+cd ~/.vimplus
+sudo ./install.sh
+
 sudo apt-get install mysql-client mysql-server -y;
 sudo apt-get install redis -y;
 sudo apt-get install build-essential -y;
