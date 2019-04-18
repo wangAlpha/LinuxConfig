@@ -1,0 +1,74 @@
+
+==> Start to install adobe-source-code-pro-fonts
+Installed: adobe-source-code-pro-fonts
+==> Start to install archlinuxcn-keyring
+Installed: archlinuxcn-keyring
+==> Start to install autojump
+Installed: autojump
+==> Start to install llvm
+Installed: llvm
+==> Start to install clang
+Installed: clang
+==> Start to install clion
+Error: clion
+==> Start to install cmake
+Installed: cmake
+==> Start to install ctags
+Installed: ctags
+==> Start to install dnsutils
+Installed: dnsutils
+==> Start to install electronic-wechat-git
+Error: electronic-wechat-git
+==> Start to install evince
+Installed: evince
+==> Start to install fcitx
+Installed: fcitx
+==> Start to install fcitx-configtool
+Installed: fcitx-configtool
+==> Start to install fcitx-im
+Installed: fcitx-im
+==> Start to install fcitx-sogoupinyin
+Installed: fcitx-sogoupinyin
+==> Start to install fontweak
+Error: fontweak
+==> Start to install gcc-multilib
+Installed: gcc-multilib
+==> Start to install git
+Installed: git
+==> Start to install gitg
+Installed: gitg
+==> Start to install google-chrome
+Installed: google-chrome
+==> Start to install htop
+Installed: htop
+==> Start to install inetutils
+Installed: inetutils
+==> Start to install iproute2
+Installed: iproute2
+==> Start to install ipython
+Installed: ipython
+==> Start to install libmpdclient
+Installed: libmpdclient
+==> Start to install megasync
+Installed: megasync
+==> Start to install mlocate
+Installed: mlocate
+==> Start to install neofetch
+Installed: neofetch
+==> Start to install netease-cloud-music
+Installed: netease-cloud-music
+==> Start to install net-tools
+Installed: net-tools
+==> Start to install nodejs
+Installed: nodejs
+==> Start to install npm
+Installed: npm
+==> Start to install pandoc
+Installed: pandoc
+==> Start to install papirus-icon-theme
+Installed: papirus-icon-theme
+==> Start to install powerline-fonts
+Installed: powerline-fonts
+==> Start to install proxychains
+Installed: proxychains
+==> Start to install pycharm-community-edition
