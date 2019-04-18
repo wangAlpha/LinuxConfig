@@ -72,3 +72,89 @@ Installed: powerline-fonts
 ==> Start to install proxychains
 Installed: proxychains
 ==> Start to install pycharm-community-edition
+Installed: pycharm-community-edition
+==> Start to install python2-pip
+Installed: python2-pip
+==> Start to install python-pip
+Installed: python-pip
+==> Start to install qt-recordmydesktop
+Error: qt-recordmydesktop
+==> Start to install ranger
+Installed: ranger
+==> Start to install rar
+Installed: rar
+==> Start to install screenfetch
+Installed: screenfetch
+==> Start to install smplayer
+Installed: smplayer
+==> Start to install screen
+Installed: screen
+==> Start to install tcl
+Installed: tcl
+==> Start to install tcpdump
+Installed: tcpdump
+==> Start to install terminator
+Installed: terminator
+==> Start to install tk
+Installed: tk
+==> Start to install tlp
+Installed: tlp
+==> Start to install tree
+Installed: tree
+==> Start to install ttf-font-awesome
+Installed: ttf-font-awesome
+==> Start to install ttf-monaco
+Error: ttf-monaco
+==> Start to install ttf-ubuntu-font-family
+Installed: ttf-ubuntu-font-family
+==> Start to install ttf-wps-fonts
+Installed: ttf-wps-fonts
+==> Start to install typora
+Installed: typora
+==> Start to install unrar
+Error: unrar
+==> Start to install vim
+Installed: vim
+==> Start to install visual-studio-code-bin
+Installed: visual-studio-code-bin
+==> Start to install wireshark-gtk
+Error: wireshark-gtk
+==> Start to install wps-office
+Error: wps-office
+==> Start to install wqy-microhei
+Installed: wqy-microhei
+==> Start to install xclip
+Installed: xclip
+==> Start to install yaourt
+Installed: yaourt
+==> Start to install yay
+Installed: yay
+==> Start to install zeal
+Installed: zeal
+==> Start to install zsh
+Installed: zsh
+==> Start to install flameshot
+Installed: flameshot
+==> Start to install file-roller
+Installed: file-roller
+==> Start to install python3-pip
+Error: python3-pip
+==> Start to install net-tools
+Installed: net-tools
+==> Start to install docker
+Installed: docker
+==> Start to install nautilus
+Installed: nautilus
+==> Start to install codeblocks
+Installed: codeblocks
+==> Start to install visual-studio-code-bin
+Installed: visual-studio-code-bin
+==> Start to install go
+Installed: go
+-> 67 apps had been installed
+-> 9 apps were not installed
+==> Start to install materia-theme
+Installed: materia-theme
+==> Start to install papirus-smplayer-theme-git
+Installed: papirus-smplayer-theme-git
+==> Start to install xflux-gui-git

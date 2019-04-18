@@ -14,7 +14,6 @@ LOG=$relative_location/../log
 
 # install software
 install_software() {
-    clear
     print_log 'install software...' $LOG
     chmod +x $relative_location/app.sh
     $relative_location/app.sh
@@ -23,7 +22,6 @@ install_software() {
 
 # config etc files
 config_etc() {
-    clear
     print_log "config etc..." $LOG
     chmod +x $relative_location/etc_conf_apply.sh
     $relative_location/etc_conf_apply.sh
@@ -32,7 +30,6 @@ config_etc() {
 
 # config ssh for github
 config_ssh() {
-    clear
     print_log "config ssh for github..." $LOG
 
     git config --global user.email "472146630@qq.com"
@@ -50,7 +47,6 @@ config_ssh() {
 
 # config mirrors list
 config_mirrors() {
-    clear
     print_log "config mirrors list" $LOG
     sudo pacman-mirrors -c China
     print_log "done" $LOG
@@ -58,7 +54,6 @@ config_mirrors() {
 }
 # config vim
 config_vim() {
-    clear
     print_log "do config for vim..." $LOG
     # vim had been installed?
     check_software vim 'pacman -S --noconfirm'
@@ -77,13 +72,14 @@ config_vim() {
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     link $relative_location/../res/vim/colors $HOME/.vim/colors
     vim +PluginInstall +qall
-    $HOME/.vim/bundle/YouCompleteMe/install.sh  --clang-completer --system-libclang
+    yaourt -Sy vim-youcompleteme-git
+    # TODO git 太慢了
+    # $HOME/.vim/bundle/YouCompleteMe/install.sh  --clang-completer --system-libclang
     print_log "done" $LOG
 }
 
 # config zsh
 config_zsh() {
-    clear
     print_log "do config for zsh..." $LOG
     check_software zsh 'pacman -S --noconfirm'
     check_software autojump 'pacman -S --noconfirm'
@@ -105,7 +101,6 @@ config_zsh() {
 }
 
 config_py() {
-    clear
     mkdir .config/pip
     echo "[global]
 timeout = 60
@@ -114,36 +109,33 @@ trusted-host = pypi.douban.com" > $HOME/.config/pip.conf
 }
 
 config_ssr() {
-  clear
   pip3 install genpac
   mkdir $HOME/.ssr; cd .ssr
   genpac --proxy="SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
   echo "file:////home/me/.ssr/autoproxy.pac"
 }
 
-echo "Configure Pacman"
-config_etc
-config_mirrors
-
-clear
-echo "Update System"
-update_system
-
-clear
-echo "Install Applications"
-install_software
+# echo "Configure Pacman"
+# config_etc
+# config_mirrors
+# 
+# echo "Update System"
+# update_system
+# 
+# echo "Install Applications"
+# install_software
 
 echo "Configure Vim"
 config_vim
 
-echo "Configure Zsh"
-config_zsh
-
-echo "Configure SSH-KEY"
-config_ssh
-
-echo "Configure ssr"
-config_ssr
-
-echo "Configure Python3"
-config_py
+# echo "Configure Zsh"
+# config_zsh
+# 
+# echo "Configure SSH-KEY"
+# config_ssh
+# 
+# echo "Configure ssr"
+# config_ssr
+# 
+# echo "Configure Python3"
+# config_py
