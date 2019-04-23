@@ -63,6 +63,5 @@ python3-pip
 net-tools
 docker
 nautilus
-codeblocks
 go
 rust

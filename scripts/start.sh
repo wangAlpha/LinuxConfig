@@ -115,27 +115,27 @@ config_ssr() {
   echo "file:////home/me/.ssr/autoproxy.pac"
 }
 
-# echo "Configure Pacman"
-# config_etc
-# config_mirrors
-# 
-# echo "Update System"
-# update_system
-# 
-# echo "Install Applications"
-# install_software
+echo "Configure Pacman"
+config_etc
+config_mirrors
+
+echo "Update System"
+update_system
+
+echo "Install Applications"
+install_software
 
 echo "Configure Vim"
 config_vim
 
-# echo "Configure Zsh"
-# config_zsh
-# 
-# echo "Configure SSH-KEY"
-# config_ssh
-# 
-# echo "Configure ssr"
-# config_ssr
-# 
-# echo "Configure Python3"
-# config_py
+echo "Configure Zsh"
+config_zsh
+
+echo "Configure SSH-KEY"
+config_ssh
+
+echo "Configure ssr"
+config_ssr
+
+echo "Configure Python3"
+config_py

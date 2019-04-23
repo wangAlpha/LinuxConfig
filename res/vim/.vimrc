@@ -11,7 +11,6 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'docunext/closetag.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
 " plugin end here
 call vundle#end()
 filetype plugin indent on
