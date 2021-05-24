@@ -94,8 +94,9 @@ alias lsdel='ls $HOME/.delete'
 alias unrm=unDoRm
 alias lastrmtowhere=movetowhere
 # clean ~/.delete
-alias install='pacman -S --nofirm '
 alias cleandel=cleanDelete
+alias add='sudo pacman -Sy --confirm '
+alias add='sudo pacman -D  '
 # }}
 
 
