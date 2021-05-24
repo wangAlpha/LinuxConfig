@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 # created by liwang
 
 # 执行该脚本时所在路径
@@ -115,6 +115,23 @@ config_ssr() {
   echo "file:////home/me/.ssr/autoproxy.pac"
 }
 
+config_rust() {
+    mkdir $HOME/.cargo/config
+    rustup toolchain install nightly
+    rustup default nightly
+    echo '[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+replace-with = 'ustc'
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"' > $HOME/.cargo/config
+
+    cargo +nightly install rustfmt
+    rustup component add llvm-tools-preview
+    cargo +nightly install racer
+    rustup component add rls-preview --toolchain nightly
+    rustup component add rust-analysis --toolchain nightly
+}
+
 echo "Configure Pacman"
 config_etc
 config_mirrors
@@ -139,3 +156,9 @@ config_ssr
 
 echo "Configure Python3"
 config_py
+
+echo "Configure Rust"
+config_rust
+
+# echo "Configure Golang"
+# config_golang

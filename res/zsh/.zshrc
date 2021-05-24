@@ -2,7 +2,7 @@
 # update 2019.1.1
 
 # when using wsl-terminal, you can set login shell is zsh
-# but when you do that, it will not read the configration 
+# but when you do that, it will not read the configration
 # info in $HOME/.bashrc
 # so loading it before loading the configration of zsh
 # note: redirecting the error information to /dev/null
@@ -94,16 +94,17 @@ alias lsdel='ls $HOME/.delete'
 alias unrm=unDoRm
 alias lastrmtowhere=movetowhere
 # clean ~/.delete
+alias install='pacman -S --nofirm '
 alias cleandel=cleanDelete
 # }}
 
 
 # connecting my vps
-alias 'vps'='ssh -p 28173 root@176.122.129.89'
+# alias 'vps'='ssh -p 28173 root@176.122.129.89'
 
-# java jdk {{
-export JAVA_HOME=/usr/lib/jvm/java8
-export JRE_HOME=${JAVA_HOME}/jre
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-export PATH=${JAVA_HOME}/bin:$PATH
+# # java jdk {{
+# export JAVA_HOME=/usr/lib/jvm/java8
+# export JRE_HOME=${JAVA_HOME}/jre
+# export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+# export PATH=${JAVA_HOME}/bin:$PATH
 # }}
