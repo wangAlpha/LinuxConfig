@@ -12,3 +12,6 @@ apt-get update
 apt-get -y install \
       xz-utils \
       zlib1g-dev
+
+RUN wget https://www.openssl.org/source/openssl-1.1.1t.tar.gz
+
