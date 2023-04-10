@@ -1,5 +1,4 @@
-#!/bin/bash
-#curl https://sh.rustup.rs -sSf | sh
+#!/bin/zsh
 
 RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
 RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
@@ -24,8 +23,9 @@ registry = "git://crates.rustcc.cn/crates.io-index"
 [target.x86_64-unknown-linux-gnu]
 rustflags = [
     "-C", "link-arg=-fuse-ld=lld",
-]' >> ~/.cargo/config
+]' > ~/.cargo/config
 
+curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 
 rustup install nightly
@@ -49,7 +49,6 @@ cargo installl-update -a
 cargo install cargo-expand
 cargo install cargo-tree
 cargo install cargo-watch
-cargo install cargo-fuzz
 cargo install fd
 cargo install exa
 cargo install lsd
@@ -58,14 +57,3 @@ cargo install cargo-cache
 rustup update;
 
 rustup component add clippy rustfmt rls-preview rust-analysis rust-src
-
-# RLS is the stable language server implementation for using Rust with IDEs. It provides a number of features for IDEs to help working with Rust.
-# rust-analyzer provides an an alternative to RLS, as a language server for Rust, however it’s still considered alpha software.
-# Using rustfmt and Clippy can boost productivity and improve code quality.
-# There are cases where you may want to use nightly-only features in published crates, and when doing so you should place these features behind a feature flag to support stable users.
-# cargo-update makes it easy to update your Cargo packages.
-# cargo-expand lets you expand macros to see the resulting code.
-# cargo-fuzz let’s you easily integrate with libFuzzer for fuzz testing.
-# cargo-watch automates re-running Cargo commands on code changes.
-# cargo-tree lets you visualize project dependency trees.
-

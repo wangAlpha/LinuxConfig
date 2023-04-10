@@ -1,13 +1,12 @@
+#!/bin/zsh
 set -x
 
-wget https://apt.llvm.org/llvm.sh
+wget https://mirrors.tuna.tsinghua.edu.cn/llvm-apt/llvm.sh
 chmod +x llvm.sh
-# sudo ./llvm.sh <version number> all
-# or
-sudo ./llvm.sh all
+sudo ./llvm.sh  all -m https://mirrors.tuna.tsinghua.edu.cn/llvm-apt
 
-sudo apt-get update
-sudo apt-get -y install \
+apt-get update
+apt-get -y install \
       build-essential \
       cmake \
       curl \
@@ -19,5 +18,5 @@ sudo apt-get -y install \
       lld
 
 
-# sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-13 100
-# sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang-13 100
+sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-15 100
+sudo update-alternatives --install /usr/bin/cc cc /usr/bin/clang-15 100
