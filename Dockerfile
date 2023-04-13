@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 ARG HOME_DIR=/root
-ARG DOCKER_CONFIG_DIR=${HOME_DIR}/docker
+ARG MYSQL_CONFIG_DIR=${HOME_DIR}/docker
 
 ENV LANG=en_US.UTF-8
 
@@ -67,18 +67,10 @@ RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.
 
 RUN git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 
-RUN mkdir -p ${DOCKER_CONFIG_DIR}/bin
-RUN mkdir -p ${DOCKER_CONFIG_DIR}/config
+RUN mkdir -p ${MYSQL_CONFIG_DIR}/bin
+RUN mkdir -p ${MYSQL_CONFIG_DIR}/data
+RUN mkdir -p ${MYSQL_CONFIG_DIR}/config
 RUN mkdir -p /root/code
-
 RUN groupadd mysql && useradd -r -g mysql -s /bin/false mysql
 
 WORKDIR /root
-
-# copy vscode config files
-# COPY config/* ${DOCKER_CONFIG_DIR}/config/
-
-# copy starter scripts
-# COPY bin/* ${DOCKER_CONFIG_DIR}/bin/
-
-#RUN chmod +x ${DOCKER_CONFIG_DIR}/bin/*
